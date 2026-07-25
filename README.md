@@ -1,20 +1,20 @@
 # Enterprise IT Portfolio
 
 
-My name is **Abdalla Hussein**, and I am an IT Support professional based in Melbourne, Australia.
+My name is Abdalla Hussein, an aspiring Systems Administrator and IT Support professional based in Melbourne, Australia.
 
 This repository showcases practical enterprise infrastructure projects I have completed while developing my skills in Systems Administration, Microsoft 365 Administration, Windows Server, Networking and Linux Administration.
 
 Every project has been implemented in a hands-on environment and includes:
 
-- Project objectives
-- Business scenario
-- Technologies used
-- Configuration process
-- Validation
-- Troubleshooting
-- Lessons learned
-- Screenshots
+Business Scenario
+Environment
+Implementation
+Validation
+Functional Testing
+Outcome
+Key Takeaways
+Skills Demonstrated
 
 ---
 
@@ -63,22 +63,14 @@ Every project has been implemented in a hands-on environment and includes:
 
 # Current Projects
 
-| Project | Status |
-|----------|--------|
-| Active Directory Deployment | ✅ Complete |
-| NTFS & SMB Permissions | ✅ Complete |
-| Group Policy Administration | ✅ Complete |
-| DNS Server Configuration | ✅ Complete |
-| DHCP Server Configuration | ✅ Complete |
-| Microsoft Entra ID Administration | ✅ Complete |
-| Microsoft Intune Administration | ✅ Complete |
-| Configuration Profiles | ✅ Complete |
-| Compliance Policies | ✅ Complete |
-| Win32 Application Deployment | ✅ Complete |
-| Conditional Access | ✅ Complete |
-| Endpoint Security | ✅ Complete |
-| Linux Administration | ✅ Complete |
-| Enterprise Networking | ✅ Complete |
+| Infrastructure Projects | Status         |
+| ----------------------- | -------------- |
+| Windows Server          | ✅ Complete     |
+| Microsoft Entra ID      | 🚧 In Progress |
+| Microsoft Intune        | 🚧 In Progress |
+| Linux Administration    | ⏳ Planned      |
+| Networking              | ⏳ Planned      |
+
 
 ---
 
