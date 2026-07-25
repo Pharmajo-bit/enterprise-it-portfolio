@@ -1,6 +1,5 @@
 # Enterprise IT Portfolio
 
-Welcome!
 
 My name is **Abdalla Hussein**, and I am an IT Support professional based in Melbourne, Australia.
 
