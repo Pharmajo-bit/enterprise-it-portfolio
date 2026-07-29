@@ -86,6 +86,8 @@ Reviewing the existing policy ensured that authentication settings could be upda
 
 **Figure 1.** Default Domain Policy reviewed prior to implementing password security settings.
 
+![Figure 1](images/figure1.png)
+
 ---
 
 ## Password Policy Configured
@@ -107,6 +109,8 @@ These settings help strengthen authentication security by requiring users to cre
 ### Verification
 
 **Figure 2.** Password Policy configured within the Default Domain Policy.
+
+![Figure 2](images/figure2.png)
 
 ---
 
@@ -130,6 +134,8 @@ Together, these settings reduce the effectiveness of password guessing attacks w
 
 **Figure 3.** Account Lockout Policy configured to protect against repeated failed logon attempts.
 
+![Figure 3](images/figure3.png)
+
 ---
 
 ## Policy Deployed
@@ -147,6 +153,8 @@ The policy refresh was executed on both the Domain Controller and the Windows 11
 ### Verification
 
 **Figure 4.** Group Policy updated following deployment of the password and account lockout policies.
+
+![Figure 4](images/figure4.png)
 
 ---
 
@@ -190,7 +198,11 @@ The successful recovery of the test account confirmed that the configured accoun
 
 **Figure 5.** Functional testing confirmed successful account lockout after five failed authentication attempts.
 
+![Figure 5](images/figure5.png)
+
 **Figure 6.** Administrator restored the locked user account using Active Directory Users and Computers.
+
+![Figure 6](images/figure6.png)
 
 ---
 
