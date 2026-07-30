@@ -50,7 +50,7 @@ Ahmed Ali's Microsoft Entra ID account was created with the organisational attri
 
 Fatima Noor was assigned as Ahmed Ali's manager, establishing the employee's reporting relationship within Microsoft Entra ID.
 
-![Figure 2](picture2.png)
+![Figure 2](Picture2.png)
 
 ---
 
@@ -66,13 +66,13 @@ Ahmed's Microsoft Entra ID profile was then updated to reflect his new departmen
 
 Following Ahmed Ali's promotion, his security group membership was updated from the Finance group to the Human Resources group, ensuring his access permissions aligned with his new organisational role.
 
-![Figure 3](picture3.png)
+![Figure 3](Picture3.png)
 
 ### Figure 4 – Promotion and Department Change
 
 Ahmed Ali's Microsoft Entra ID profile was updated to reflect his promotion and transfer to the Human Resources department, ensuring organisational information remained accurate within the Microsoft 365 environment.
 
-![Figure 4](picture4.png)
+![Figure 4](Picture4.png)
 
 ---
 
@@ -88,13 +88,13 @@ Ahmed was granted access to the Human Resources shared mailbox, allowing him to 
 
 Ahmed Ali was granted the appropriate permissions to access the Human Resources shared mailbox, enabling collaboration with other members of the department.
 
-![Figure 5](picture5.png)
+![Figure 5](Picture5.png)
 
 ### Figure 6 – Distribution List Membership
 
 Ahmed Ali was added to the Human Resources distribution list to facilitate email communication with members of the Human Resources department.
 
-![Figure 6](picture6.png)
+![Figure 6](Picture6.png)
 
 ---
 
@@ -110,13 +110,13 @@ As part of the offboarding procedure, Ahmed's ability to sign in to Microsoft 36
 
 Ahmed Ali's sign-in was blocked as part of the organisation's offboarding procedure, preventing further access to Microsoft 365 services and organisational resources.
 
-![Figure 7](picture7.png)
+![Figure 7](Picture7.png)
 
 ### Figure 8 – License Removal
 
 The Microsoft 365 Business license assigned to Ahmed Ali was removed, completing the user deprovisioning process and making the license available for reassignment.
 
-![Figure 8](picture8.png)
+![Figure 8](Picture8.png)
 
 ---
 
@@ -132,7 +132,7 @@ The audit logs confirmed that the user lifecycle activities—including account 
 
 Microsoft Entra ID audit logs were reviewed to verify that the administrative actions performed throughout Ahmed Ali's lifecycle were successfully recorded for auditing and compliance purposes.
 
-![Figure 9](picture9.png)
+![Figure 9](Picture9.png)
 
 ---
 
