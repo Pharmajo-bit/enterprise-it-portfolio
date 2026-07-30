@@ -61,7 +61,17 @@ Skills Demonstrated
 
 ---
 
-# Current Projects
+# Featured Projects
+
+## Windows Server
+
+- ✅ Active Directory User Provisioning
+- ✅ Secure Department File Share
+- ✅ Group Policy Management
+- ✅ Password Policy Management
+- ✅ DNS & DHCP
+
+# Project Roadmap
 
 | Infrastructure Projects | Status         |
 | ----------------------- | -------------- |
