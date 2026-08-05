@@ -42,7 +42,7 @@ To meet these requirements, VLAN segmentation was implemented on the access swit
 
 The network consisted of three departmental workstations connected to a Layer 2 switch. A single trunk link connected the switch to the router, where individual subinterfaces provided Layer 3 routing between VLANs.
 
-![Network Topology](images/network topology.png)
+![Network Topology](images/network-topology.png)
 
 ---
 
@@ -56,7 +56,7 @@ Three VLANs were created to provide logical separation between departments. Acce
 
 **Figure 1 – VLAN Configuration**
 
-![VLAN Configuration](images/sh vlan brief.png)
+![VLAN Configuration](images/sh-vlan-brief.png)
 
 ---
 
@@ -68,7 +68,7 @@ The uplink between the switch and router was configured as an IEEE 802.1Q trunk,
 
 **Figure 2 – Trunk Verification**
 
-![Trunk Verification](images/sh int trunk.png)
+![Trunk Verification](images/sh-int-trunk.png)
 
 ---
 
@@ -80,7 +80,7 @@ Router subinterfaces were configured with unique IP addresses for each VLAN, pro
 
 **Figure 3 – Router Subinterfaces**
 
-![Router Subinterfaces](images/sh ip int brief.png)
+![Router Subinterfaces](images/sh-ip-int-brief.png)
 
 ---
 
@@ -92,7 +92,7 @@ Connectivity testing confirmed successful communication between devices located 
 
 **Figure 4 – Successful Inter-VLAN Connectivity**
 
-![Inter-VLAN Connectivity](images/inter-vlan ping.png)
+![Inter-VLAN Connectivity](images/inter-vlan-ping.png)
 
 ---
 
