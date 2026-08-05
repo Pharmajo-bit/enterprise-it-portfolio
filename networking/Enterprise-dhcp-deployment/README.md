@@ -57,7 +57,7 @@ Separate DHCP pools were created for each departmental VLAN. Each pool defined t
 
 **Figure 1 – DHCP Pool Configuration**
 
-![DHCP Pool](images/show-ip-dhcp-pool.png)
+![DHCP Pool](images/sh-ip-dhcp-pool.png)
 
 ---
 
@@ -69,11 +69,11 @@ Each workstation was configured to obtain its network configuration automaticall
 
 **Figure 2 – HR Workstation**
 
-![HR DHCP](images/hr-ipconfig.png)
+![HR DHCP](images/HR-ipconfig.png)
 
 **Figure 3 – IT Workstation**
 
-![IT DHCP](images/it-ipconfig.png)
+![IT DHCP](images/IT-ipconfig.png)
 
 **Figure 4 – Finance Workstation**
 
@@ -89,7 +89,7 @@ The DHCP binding table was examined to confirm that leases had been successfully
 
 **Figure 5 – DHCP Lease Bindings**
 
-![DHCP Binding](images/show-ip-dhcp-binding.png)
+![DHCP Binding](images/sh-ip-dhcp-binding.png)
 
 ---
 
@@ -101,7 +101,7 @@ Connectivity testing confirmed that all departmental devices successfully commun
 
 **Figure 6 – Successful Inter-VLAN Connectivity**
 
-![Connectivity](images/inter-vlan-connectivity.png)
+![Connectivity](images/inter-vlan-ping.png)
 
 ---
 
