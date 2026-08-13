@@ -1,4 +1,4 @@
-# Case Study 07 - Enterprise DHCP Deployment
+# Case Study - Enterprise DHCP Deployment
 
 ## Overview
 
