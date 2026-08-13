@@ -1,4 +1,4 @@
-# Case Study 08 - Directional Traffic Control Using Extended Access Control Lists (ACLs)
+# Case Study - Directional Traffic Control Using Extended Access Control Lists (ACLs)
 
 ## Overview
 
