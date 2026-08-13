@@ -1,4 +1,4 @@
-# Case Study 09 - Securing Internal Web Services Using Extended Access Control Lists (ACLs)
+# Case Study - Securing Internal Web Services Using Extended Access Control Lists (ACLs)
 
 ## Overview
 
