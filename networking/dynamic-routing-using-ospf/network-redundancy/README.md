@@ -107,7 +107,7 @@ Interface status was verified using:
 show ip interface brief
 ```
 
-![R1 Interface Verification](images/initial-ip-brief(1).png)
+![R1 Interface Verification](images/initial-ip-brief.png)
 
 The output from R1 confirmed that all three required interfaces were operational in the `up/up` state.
 
@@ -128,7 +128,7 @@ router ospf 1
  network 10.0.13.0 0.0.0.3 area 0
 ```
 
-![R1 OSPF Configuration](images/section-router-ospf(1).png)
+![R1 OSPF Configuration](images/section-router-ospf.png)
 
 Each router advertised its directly connected networks into OSPF.
 
@@ -154,7 +154,7 @@ OSPF neighbor relationships were verified using:
 show ip ospf neighbor
 ```
 
-![OSPF Neighbor Verification](images/ospf%20neighbor(1).png)
+![OSPF Neighbor Verification](images/ospf%20neighbor.png)
 
 R1 successfully established `FULL` OSPF adjacencies with both neighboring routers.
 
@@ -172,7 +172,7 @@ The route from R1 to the remote `192.168.20.0/24` LAN was examined using:
 show ip route 192.168.20.0
 ```
 
-![OSPF Route Before Failure](images/sh-ip-route-before-failure(1).png)
+![OSPF Route Before Failure](images/sh-ip-route-before-failure.png)
 
 R1 learned two routes to the remote network:
 
@@ -207,7 +207,7 @@ ping 192.168.20.2
 tracert 192.168.20.2
 ```
 
-![End-to-End Connectivity Test](images/end-to-end-connectivity-test-before-failure(1).png)
+![End-to-End Connectivity Test](images/end-to-end-connectivity-test-before-failure.png)
 
 PC1 successfully reached PC2 across the routed network.
 
@@ -230,7 +230,7 @@ R1 → R3 → R4
 
 After removing the R1-R2 connection, only the lower path remained available.
 
-![Network Topology After Failure](images/network-topology-after-failure(1).png)
+![Network Topology After Failure](images/network-topology-after-failure.png)
 
 No static route was added and no manual change was made to the existing OSPF configuration.
 
@@ -246,7 +246,7 @@ After the R1-R2 connection became unavailable, the route to the remote LAN was c
 show ip route 192.168.20.0
 ```
 
-![OSPF Route After Failure](images/after-R2-failure(1).png)
+![OSPF Route After Failure](images/after-R2-failure.png)
 
 Before the failure, R1 had two equal-cost routes:
 
