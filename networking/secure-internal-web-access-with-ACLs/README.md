@@ -58,7 +58,7 @@ A dedicated server was configured within the Finance VLAN using a static IP addr
 
 **Figure 1 – Finance Server Configuration**
 
-![Server Configuration](images/Screenshot 2026-08-04 200856.png)
+![Server Configuration](images/Screenshot-2026-08-04%20200856.png)
 
 **Figure 2 – HTTP Service Enabled**
 
@@ -74,7 +74,7 @@ An Extended ACL named **HR_WEB_POLICY** was created to permit ICMP traffic while
 
 **Figure 3 – Extended ACL Configuration**
 
-![ACL Configuration](images/sh access-lists.png)
+![ACL Configuration](images/show-access-lists.png)
 
 **Figure 4 – ACL Applied to Router Interface**
 

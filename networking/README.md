@@ -8,7 +8,7 @@ The projects include configuration evidence, verification commands, end-to-end t
 
 | Project | What was implemented and tested |
 |---|---|
-| [Enterprise VLAN segmentation and inter-VLAN routing](interprise-vlan-segmentation/) | Created departmental VLANs, configured 802.1Q trunking and implemented router-on-a-stick routing. |
+| [Enterprise VLAN segmentation and inter-VLAN routing](enterprise-vlan-segmentation/) | Created departmental VLANs, configured 802.1Q trunking and implemented router-on-a-stick routing. |
 | [Enterprise DHCP deployment](Enterprise-dhcp-deployment/) | Built separate DHCP pools for HR, IT and Finance, verified leases and tested client connectivity. |
 | [Directional traffic control using extended ACLs](department-isolation-using-ACLs/) | Permitted HR-initiated ICMP traffic while preventing Finance from initiating traffic toward HR. |
 | [Securing an internal web service with ACLs](secure-internal-web-access-with-ACLs/) | Allowed basic connectivity while restricting unauthorised HTTP access to a Finance application. |
