@@ -1,139 +1,66 @@
-# Case Study -Dynamic Routing Using OSPF
+# Dynamic Routing with OSPF
 
-## Overview
+## Summary
 
-This project demonstrates the implementation of Open Shortest Path First (OSPF) to provide dynamic routing between multiple networks in an enterprise environment. Unlike static routing, OSPF automatically exchanges routing information between routers, enabling networks to be discovered dynamically and reducing administrative overhead as the network grows.
+Configured OSPF Area 0 between Cisco routers, verified neighbour formation and confirmed that remote networks were learned dynamically.
 
----
+| Item | Details |
+|---|---|
+| Protocol | OSPFv2 |
+| Area | 0 |
+| Platform | Cisco Packet Tracer |
+| Verification | Interface status, running configuration, neighbours, routes and ping |
 
-## Business Scenario
+## Business requirement
 
-A growing organisation has expanded to include multiple office locations connected by routers. Maintaining static routes for every network has become increasingly difficult and prone to configuration errors.
-
-To improve scalability and simplify network administration, OSPF was implemented to dynamically advertise connected networks and automatically populate routing tables between routers.
-
----
-
-## Objectives
-
-- Configure OSPF on Cisco routers.
-- Advertise directly connected networks.
-- Establish OSPF neighbour relationships.
-- Verify dynamically learned routes.
-- Validate end-to-end communication between remote networks.
-- Implement passive interfaces following enterprise best practices.
-
----
-
-## Environment
-
-| Component | Configuration |
-|-----------|---------------|
-| Router | Cisco 2911 |
-| Routing Protocol | OSPFv2 |
-| Area | Area 0 |
-| LAN 1 | 192.168.10.0/24 |
-| LAN 2 | 192.168.20.0/24 |
-| Router Link | 10.0.0.0/30 |
-| Simulation Platform | Cisco Packet Tracer |
-
----
-
-## Network Topology
-
-Two routers were connected through a point-to-point link, with each router providing gateway services for a separate LAN. OSPF was configured to dynamically exchange routing information between the routers.
-
-![Network Topology](images/network-topology.png)
-
----
+The routed network needed to exchange reachability information automatically. Static routes would create additional administrative work and would not adapt efficiently as the topology changed.
 
 ## Implementation
 
-### Interface Configuration
+### 1. Configure routed interfaces
 
-Each router interface was configured with the appropriate IP address before enabling dynamic routing.
+Assigned IP addresses to each router interface and confirmed that the links were operational.
 
-**Evidence**
+![Interface status](images/show-ip-interface-brief.png)
 
-**Figure 1 – Router Interface Configuration**
+### 2. Enable OSPF
 
-![Router Interfaces](images/show-ip-interface-brief.png)
+Configured OSPF and advertised the connected networks into Area 0. Passive-interface settings were used where neighbour relationships were not required.
 
----
+![OSPF configuration](images/show-running-config-ospf.png)
 
-### OSPF Configuration
+### 3. Verify neighbour formation
 
-OSPF Process 1 was configured on both routers. Network statements were used to enable OSPF on the router-to-router link while advertising each router's connected LAN.
+Confirmed that directly connected routers reached the expected OSPF adjacency state.
 
-To follow enterprise best practices, LAN interfaces were configured as passive interfaces to prevent unnecessary OSPF neighbour discovery on user networks while continuing to advertise those networks.
+![OSPF neighbours](images/show-ip-ospf-neighbor.png)
 
-**Evidence**
+### 4. Verify dynamic routes
 
-**Figure 2 – OSPF Configuration**
+Reviewed the routing table for OSPF-learned routes to remote networks.
 
-![OSPF Configuration](images/show-running-config-ospf.png)
+![OSPF routes](images/show-ip-route.png)
 
----
+## Topology and validation
 
-### OSPF Neighbour Establishment
+![Network topology](images/network-topology.png)
 
-After configuration, both routers successfully formed an OSPF neighbour relationship across the point-to-point link.
+| Check | Result |
+|---|---|
+| Routed interfaces up/up | Pass |
+| OSPF process and Area 0 configured | Pass |
+| Neighbour adjacency established | Pass |
+| Remote routes marked as OSPF-learned | Pass |
+| End-to-end connectivity successful | Pass |
 
-**Evidence**
-
-**Figure 3 – OSPF Neighbour Relationship**
-
-![OSPF Neighbour](images/show-ip-ospf-neighbor.png)
-
----
-
-### Dynamic Route Learning
-
-Once adjacency was established, each router automatically learned the remote LAN through OSPF without requiring static routes.
-
-**Evidence**
-
-**Figure 4 – OSPF Routing Table**
-
-![OSPF Routes](images/show-ip-route.png)
-
----
-
-## Validation
-
-Connectivity testing confirmed that devices on separate LANs successfully communicated using dynamically learned OSPF routes.
-
-**Evidence**
-
-**Figure 5 – Successful End-to-End Connectivity**
-
-![Connectivity Test](images/ospf-connectivity-test.png)
-
----
+![OSPF connectivity test](images/ospf-connectivity-test.png)
 
 ## Outcome
 
-The implementation successfully replaced the need for static routing by introducing OSPF dynamic routing. Routers automatically exchanged routing information, built neighbour relationships and learned remote networks, providing a scalable routing solution suitable for enterprise environments.
+Routers exchanged network information dynamically and provided end-to-end connectivity without static routes. Verification confirmed both control-plane adjacency and data-plane forwarding.
 
----
+## Skills demonstrated
 
-## Skills Demonstrated
+OSPFv2 · Area 0 · Network advertisement · Passive interfaces · Neighbour analysis · Routing tables · Cisco IOS verification · Connectivity testing
 
-- Cisco OSPF Configuration
-- Dynamic Routing
-- OSPF Neighbour Relationships
-- Route Advertisement
-- Passive Interface Configuration
-- Enterprise Routing
-- Cisco IOS Verification Commands
-- Network Validation
-
----
-
-## Lessons Learned
-
-- OSPF dynamically exchanges routing information between neighbouring routers.
-- OSPF neighbour relationships are formed only on interfaces participating in the protocol.
-- Passive interfaces allow connected networks to be advertised without sending OSPF Hello packets.
-- Dynamic routing significantly reduces administrative overhead compared to static routing.
-- Verification commands are essential for confirming neighbour relationships and learned routes.
+[Back to Networking projects](../)

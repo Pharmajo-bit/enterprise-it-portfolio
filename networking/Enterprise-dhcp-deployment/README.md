@@ -1,133 +1,65 @@
-# Case Study - Enterprise DHCP Deployment
+# Enterprise DHCP Deployment
 
-## Overview
+## Summary
 
-This project demonstrates the implementation of Dynamic Host Configuration Protocol (DHCP) within a segmented enterprise network. DHCP services were configured on a Cisco router to automatically assign IP addresses, subnet masks, default gateways and DNS settings to client devices across multiple VLANs.
+Automated address assignment for HR, IT and Finance by configuring a separate Cisco IOS DHCP pool for each departmental VLAN.
 
----
-
-## Business Scenario
-
-As the organisation expanded, manually assigning IP addresses to every workstation became inefficient and increased the risk of addressing errors and duplicate IP conflicts.
-
-To simplify administration and improve scalability, DHCP was deployed so that devices automatically received the correct network configuration based on their departmental VLAN.
-
----
-
-## Objectives
-
-- Configure DHCP services on the Cisco router.
-- Create separate DHCP pools for HR, IT and Finance.
-- Reserve gateway addresses from dynamic allocation.
-- Automatically assign IP addresses to client devices.
-- Verify successful DHCP lease allocation.
-- Validate end-to-end network connectivity.
-
----
-
-## Environment
-
-| Component | Configuration |
-|-----------|---------------|
+| Item | Details |
+|---|---|
 | Router | Cisco 2911 |
 | Switch | Cisco Catalyst 2960 |
-| DHCP Server | Cisco IOS Router |
-| VLAN 10 | HR |
-| VLAN 20 | IT |
-| VLAN 30 | Finance |
-| Simulation Platform | Cisco Packet Tracer |
+| Platform | Cisco Packet Tracer |
+| DHCP service | Cisco IOS router |
+| Client networks | VLAN 10 HR, VLAN 20 IT and VLAN 30 Finance |
 
----
+## Business requirement
 
-## Network Topology
-
-The existing enterprise network was used as the foundation for the DHCP deployment.
-
-![Network Topology](images/network-topology.png)
-
----
+Manual workstation addressing was slow and created a risk of duplicate or incorrect IP settings. Each department needed automatic configuration from its own subnet while infrastructure addresses remained reserved.
 
 ## Implementation
 
-### DHCP Pool Configuration
+### 1. Create DHCP pools
 
-Separate DHCP pools were created for each departmental VLAN. Each pool defined the network address, default gateway and DNS server. Infrastructure addresses were excluded to prevent conflicts with the router interfaces.
+Configured separate pools with the correct network, default gateway and DNS settings. Gateway and infrastructure addresses were excluded from dynamic allocation.
 
-**Evidence**
+![DHCP pool configuration](images/sh-ip-dhcp-pool.png)
 
-**Figure 1 – DHCP Pool Configuration**
+### 2. Obtain client addresses
 
-![DHCP Pool](images/sh-ip-dhcp-pool.png)
+Configured each workstation for DHCP and confirmed it received settings from the pool matching its VLAN.
 
----
+| Client | Evidence |
+|---|---|
+| HR | ![HR client address](images/HR-ipconfig.png) |
+| IT | ![IT client address](images/IT-ipconfig.png) |
+| Finance | ![Finance client address](images/finance-ipconfig.png) |
 
-### Dynamic Address Allocation
+### 3. Verify leases
 
-Each workstation was configured to obtain its network configuration automatically. Devices successfully received addresses from the appropriate DHCP pool based on their VLAN membership.
+Reviewed the DHCP binding table to confirm that leases were issued to the client devices.
 
-**Evidence**
+![DHCP lease bindings](images/sh-ip-dhcp-binding.png)
 
-**Figure 2 – HR Workstation**
+## Topology and validation
 
-![HR DHCP](images/HR-ipconfig.png)
+![Network topology](images/network-topology.png)
 
-**Figure 3 – IT Workstation**
+| Check | Result |
+|---|---|
+| Separate pool exists for each VLAN | Pass |
+| Infrastructure addresses excluded | Pass |
+| Clients receive the correct subnet settings | Pass |
+| Leases appear in the binding table | Pass |
+| Inter-VLAN connectivity remains operational | Pass |
 
-![IT DHCP](images/IT-ipconfig.png)
-
-**Figure 4 – Finance Workstation**
-
-![Finance DHCP](images/finance-ipconfig.png)
-
----
-
-### DHCP Lease Verification
-
-The DHCP binding table was examined to confirm that leases had been successfully issued to all client devices.
-
-**Evidence**
-
-**Figure 5 – DHCP Lease Bindings**
-
-![DHCP Binding](images/sh-ip-dhcp-binding.png)
-
----
-
-## Validation
-
-Connectivity testing confirmed that all departmental devices successfully communicated after automatically receiving their network configuration.
-
-**Evidence**
-
-**Figure 6 – Successful Inter-VLAN Connectivity**
-
-![Connectivity](images/inter-vlan-ping.png)
-
----
+![Connectivity after DHCP deployment](images/inter-vlan-ping.png)
 
 ## Outcome
 
-The implementation successfully automated IP address management across multiple VLANs. Devices received consistent network settings without manual configuration, reducing administrative overhead while improving scalability and maintainability.
+Clients obtained consistent network settings without manual configuration. The deployment reduced administrative effort and integrated successfully with the existing VLAN and routing design.
 
----
+## Skills demonstrated
 
-## Skills Demonstrated
+Cisco IOS DHCP · DHCP pools · Address exclusions · Lease verification · VLAN-based addressing · IP configuration · Network testing
 
-- Cisco IOS DHCP
-- DHCP Pool Configuration
-- DHCP Lease Management
-- Automatic IP Address Allocation
-- Enterprise IP Address Management
-- Router-on-a-Stick
-- Network Validation
-- Cisco IOS Verification Commands
-
----
-
-## Lessons Learned
-
-- DHCP automates IP address management and reduces manual configuration.
-- Separate DHCP pools provide appropriate network settings for different VLANs.
-- Excluding infrastructure addresses prevents IP conflicts.
-- DHCP lease verification confirms successful address assignment.
-- Connectivity testing validates that DHCP integrates correctly with existing network services.
+[Back to Networking projects](../)
