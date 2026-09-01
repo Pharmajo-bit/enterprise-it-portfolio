@@ -40,7 +40,7 @@ The organisation required a security policy that allowed HR staff to verify conn
 
 The ACL was implemented within an enterprise network consisting of three departmental VLANs connected through Router-on-a-Stick routing.
 
-![Network Topology](images/picture1-network-topology.png)
+![Network Topology](images/network-topology.png)
 
 ---
 
