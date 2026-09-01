@@ -1,33 +1,33 @@
 # Microsoft Intune
 
-This section contains a complete Microsoft Intune implementation project demonstrating the deployment and management of Windows endpoints within a simulated enterprise environment.
+This section documents hands-on endpoint administration in a Microsoft 365 and Intune lab environment.
 
-The implementation covers the full lifecycle of enterprise endpoint management, including device enrolment, configuration, compliance, endpoint security, application deployment and identity-based access control using Microsoft Intune and Microsoft Entra ID.
+## Featured project
 
----
+### [Windows device enrollment and security management](device-enrollment-and-security-management/)
 
-## Technologies
+The case study follows a Windows endpoint from enrollment through policy deployment and access validation, including:
 
-- Microsoft Intune
-- Microsoft Entra ID
-- Microsoft Defender Antivirus
-- Windows 11
-- Microsoft 365
-- Win32 Applications
+- Windows device enrollment
+- Device inventory and management
+- Configuration-profile deployment
+- Compliance-policy assignment and evaluation
+- Endpoint security configuration
+- Win32 application deployment
 - Conditional Access
+- Policy and device-status validation
 
----
+## Skills demonstrated
 
-## Skills Demonstrated
+- Microsoft Intune administration
+- Windows endpoint enrollment
+- Device configuration profiles
+- Compliance policies
+- Endpoint security
+- Application packaging and deployment
+- Conditional Access
+- Microsoft Entra ID integration
+- Policy monitoring and validation
+- Technical documentation
 
-- Windows Device Enrolment
-- Device Configuration Profiles
-- Compliance Policy Administration
-- Endpoint Security Policies
-- Microsoft Defender Management
-- Win32 Application Deployment
-- Device Group Administration
-- Group-Based Policy Assignment
-- Conditional Access Integration
-- Enterprise Endpoint Management
-- Technical Documentation
+[Read the full case study](device-enrollment-and-security-management/) · [Return to the portfolio homepage](../)
