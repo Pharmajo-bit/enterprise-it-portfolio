@@ -33,19 +33,19 @@ The domain needed consistent password controls and protection against repeated p
 
 Reviewed the Default Domain Policy to establish the current authentication baseline.
 
-![Existing policy review](images/figure1.png)
+![Existing policy review](figure1.png)
 
 ### 2. Configure password requirements
 
 Enabled complexity, a 12-character minimum and a 90-day maximum password age under Account Policies.
 
-![Password policy](images/figure2.png)
+![Password policy](figure2.png)
 
 ### 3. Configure account lockout
 
 Set the domain to lock an account after five invalid sign-in attempts for 15 minutes and reset the counter after 15 minutes.
 
-![Account lockout policy](images/figure3.png)
+![Account lockout policy](figure3.png)
 
 ### 4. Deploy the policy
 
@@ -55,7 +55,7 @@ Refreshed Group Policy on the domain controller and client:
 gpupdate /force
 ```
 
-![Policy deployment](images/figure4.png)
+![Policy deployment](figure4.png)
 
 ## Functional testing
 
@@ -68,9 +68,9 @@ A test user entered an incorrect password five times. The account became locked 
 | Administrator unlocks account | Account restored | Pass |
 | Correct password after recovery | Sign-in succeeds | Pass |
 
-![Account lockout confirmed](images/figure5.png)
+![Account lockout confirmed](figure5.png)
 
-![Administrative account recovery](images/figure6.png)
+![Administrative account recovery](figure6.png)
 
 ## Outcome
 
