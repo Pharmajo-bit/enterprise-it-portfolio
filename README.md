@@ -8,6 +8,7 @@ This portfolio documents hands-on lab projects designed around realistic support
 
 | Project | What I implemented and validated |
 |---|---|
+| [osTicket service desk operations lab](service-desk/osticket-service-desk-lab/) | Deployed osTicket with MariaDB in Docker, corrected a failed container health check, configured RBAC and SLAs, and documented L1/L2 workflows, escalation, knowledge management and overdue-ticket handling. |
 | [Microsoft Entra ID user lifecycle management](Microsoft-365-Entra-ID/user-lifecycle-management/) | Onboarded a user, assigned licensing and access, managed a department transfer, configured Exchange Online resources, completed secure offboarding and reviewed audit logs. |
 | [Microsoft Intune device enrollment and security management](microsoft-365-intune/device-enrollment-and-security-management/) | Enrolled and managed a Windows endpoint using compliance, configuration, application deployment and access-control policies. |
 | [Secure Windows Server file share](windows-server/02-secure-department-file-share/) | Implemented an SMB departmental share using Active Directory groups, share permissions, NTFS permissions and least-privilege access testing. |
@@ -15,6 +16,10 @@ This portfolio documents hands-on lab projects designed around realistic support
 | [HSRP default-gateway redundancy](networking/redundancy-with-hsrp/) | Configured an active/standby virtual gateway, tested router failure, measured the interruption and validated preemptive failback. |
 
 ## Portfolio sections
+
+### [Service desk and IT operations](service-desk/)
+
+Docker-based osTicket deployment, ticket triage, L1/L2 troubleshooting, escalation, RBAC, SLAs and knowledge management.
 
 ### [Windows Server administration](windows-server/)
 
@@ -34,6 +39,7 @@ VLAN segmentation, inter-VLAN routing, DHCP, extended ACLs, OSPF, ECMP, HSRP and
 
 ## Technical capabilities demonstrated
 
+- **Service desk operations:** Ticket triage, prioritisation, L1/L2 troubleshooting, escalation, SLA monitoring, knowledge management and technical documentation
 - **Identity and access:** Active Directory, Microsoft Entra ID, user lifecycle administration, security groups, RBAC and least privilege
 - **Microsoft 365:** User and licence administration, Exchange Online shared mailboxes, distribution lists and audit logs
 - **Endpoint management:** Microsoft Intune enrollment, configuration profiles, compliance policies, application deployment and Conditional Access
@@ -64,6 +70,7 @@ Each case study is structured to answer the questions an IT team would ask:
 
 | Area | Status |
 |---|---|
+| Service desk operations | osTicket project completed; ServiceNow recreation planned |
 | Windows Server | Completed projects available |
 | Microsoft Entra ID | Completed project available |
 | Microsoft Intune | Completed project available |
