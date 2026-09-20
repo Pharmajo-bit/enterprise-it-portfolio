@@ -142,6 +142,6 @@ Infrastructure modelled queue and Print Spooler recovery, returned ownership to 
 - Knowledge-base development and escalation criteria
 - Honest separation of implemented lab work from simulated operational exercises
 
-## Next phase
+## Enterprise-platform continuation
 
-Recreate the same operating model in ServiceNow, focusing on incident states, assignment groups, SLAs, knowledge workflows and reporting. This will allow a direct comparison between a lightweight open-source service desk and an enterprise ITSM platform.
+I recreated the strongest parts of this operating model in a [ServiceNow Personal Developer Instance](../servicenow-service-desk-lab/), focusing on assignment groups, group-based access, incident states, SLAs, knowledge publishing and operational reporting.
